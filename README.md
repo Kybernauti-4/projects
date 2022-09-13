@@ -8,4 +8,15 @@ Knížka pro start s RPI Picem (ta růžová co teprve začneme používat):
 A příručky pro bastlíře (základy, teorie atp.):
 > https://elektrokniha.cz/
 
-### Seznam studentů a jejich projektů (maturitních prací)
+### Seznam studentů a jejich projektů (maturitních prací) - Doplnit do 30.9.!
+ - Bartička Matěj - 
+ - Faiman Viktor - 
+ - Fajfrlík Tomáš - 
+ - Holub Patrik - 
+ - Horáček Vojtěch - 
+ - Kučera Pavel - 
+ - Lebeda Pavel - 
+ - Poustka Václav - 
+ - Sůsa Jaroslav - 
+ - Štěpánek Matěj - 
+ - Tarka Lukáš - 
