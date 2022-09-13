@@ -1,2 +1,2 @@
-# projects
-Projects from KYB 4.grade
+# Projekty
+Seznam studentů a jejich projektů (maturitních prací)
