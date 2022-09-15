@@ -16,7 +16,7 @@ A příručky pro bastlíře (základy, teorie atp.):
  - Horáček Vojtěch - 
  - Kučera Pavel - 
  - Lebeda Pavel - 
- - Poustka Václav - 
+ - Poustka Václav - ProjectAR2
  - Sůsa Jaroslav - 
  - Štěpánek Matěj - 
  - Tarka Lukáš - 
