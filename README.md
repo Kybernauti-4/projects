@@ -14,7 +14,7 @@ A příručky pro bastlíře (základy, teorie atp.):
  - Fajfrlík Tomáš - 
  - Holub Patrik - 
  - Horáček Vojtěch - 
- - Kučera Pavel - Fingerprint door lock
+ - Kučera Pavel - Fingerprint door lock (https://github.com/Mor1mad/Fingerprint)
  - Lebeda Pavel - 
  - Poustka Václav - ProjectAR2
  - Sůsa Jaroslav - 
