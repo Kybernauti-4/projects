@@ -9,8 +9,8 @@ A příručky pro bastlíře (základy, teorie atp.):
 > https://elektrokniha.cz/
 
 ### Seznam studentů a jejich projektů (maturitních prací) - Doplnit do 30.9.!
- - Bartička Matěj - 
- - Faiman Viktor - 
+ - Bartička Matěj - SphereCar (https://github.com/Kybernauti-4/Sphere-Car.git)
+ - Faiman Viktor - SphereCar (https://github.com/Kybernauti-4/Sphere-Car.git)
  - Fajfrlík Tomáš - RC model lodi https://github.com/Kybernauti-4/RC-model-lodi
  - Holub Patrik - DnD Interactive Story (https://github.com/Kybernauti-4/DnD_YearWork)
  - Horáček Vojtěch - 
