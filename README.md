@@ -17,6 +17,6 @@ A příručky pro bastlíře (základy, teorie atp.):
  - Kučera Pavel - Fingerprint door lock (https://github.com/Mor1mad/Fingerprint)
  - Lebeda Pavel - 
  - Poustka Václav - ProjectAR2
- - Sůsa Jaroslav - 
+ - Sůsa Jaroslav - Desk Lamp https://github.com/Kybernauti-4/Desk-lamp
  - Štěpánek Matěj - 
  - Tarka Lukáš - 
