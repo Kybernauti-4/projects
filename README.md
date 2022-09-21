@@ -12,7 +12,7 @@ A příručky pro bastlíře (základy, teorie atp.):
  - Bartička Matěj - 
  - Faiman Viktor - 
  - Fajfrlík Tomáš - 
- - Holub Patrik - 
+ - Holub Patrik - DnD Interactive Story (https://github.com/Kybernauti-4/DnD_YearWork)
  - Horáček Vojtěch - 
  - Kučera Pavel - Fingerprint door lock (https://github.com/Mor1mad/Fingerprint)
  - Lebeda Pavel - 
