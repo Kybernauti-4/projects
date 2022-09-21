@@ -16,7 +16,7 @@ A příručky pro bastlíře (základy, teorie atp.):
  - Horáček Vojtěch - 
  - Kučera Pavel - Fingerprint door lock (https://github.com/Mor1mad/Fingerprint)
  - Lebeda Pavel - 
- - Poustka Václav - ProjectAR2
+ - Poustka Václav - OmniwheelCar (https://github.com/Kybernauti-4/OmniwheelCar)
  - Sůsa Jaroslav - Desk Lamp https://github.com/Kybernauti-4/Desk-lamp
  - Štěpánek Matěj - 
  - Tarka Lukáš - 
