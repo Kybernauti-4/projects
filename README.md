@@ -11,7 +11,7 @@ A příručky pro bastlíře (základy, teorie atp.):
 ### Seznam studentů a jejich projektů (maturitních prací) - Doplnit do 30.9.!
  - Bartička Matěj - 
  - Faiman Viktor - 
- - Fajfrlík Tomáš - 
+ - Fajfrlík Tomáš - RC model lodi https://github.com/Kybernauti-4/RC-model-lodi
  - Holub Patrik - DnD Interactive Story (https://github.com/Kybernauti-4/DnD_YearWork)
  - Horáček Vojtěch - 
  - Kučera Pavel - Fingerprint door lock (https://github.com/Mor1mad/Fingerprint)
