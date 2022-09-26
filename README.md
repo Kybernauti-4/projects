@@ -15,7 +15,7 @@ A příručky pro bastlíře (základy, teorie atp.):
  - Holub Patrik - DnD Interactive Story (https://github.com/Kybernauti-4/DnD_YearWork)
  - Horáček Vojtěch - 
  - Kučera Pavel - Fingerprint door lock (https://github.com/Mor1mad/Fingerprint)
- - Lebeda Pavel - 
+ - Lebeda Pavel - ScramBot (https://github.com/Kybernauti-4/ScramBot)
  - Poustka Václav - OmniwheelCar (https://github.com/Kybernauti-4/OmniwheelCar)
  - Sůsa Jaroslav - Desk Lamp https://github.com/Kybernauti-4/Desk-lamp
  - Štěpánek Matěj - 
