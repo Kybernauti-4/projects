@@ -22,5 +22,5 @@ A příručky pro bastlíře (základy, teorie atp.):
 - Štěpánek Matěj - TotoNeniStreamDeck <https://github.com/Kybernauti-4/streamdeck>
 - Tarka Lukáš - NěcoVíceNežPoloOsa
 
-> Zadání - 4.L - Cibulková
-> Zadaní - 4.M - Matasová
+> - Zadání - 4.L - Cibulková
+> - Zadaní - 4.M - Matasová
