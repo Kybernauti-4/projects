@@ -13,7 +13,7 @@ A příručky pro bastlíře (základy, teorie atp.):
  - Faiman Viktor - SphereCar (https://github.com/Kybernauti-4/Sphere-Car.git)
  - Fajfrlík Tomáš - RC model lodi https://github.com/Kybernauti-4/RC-model-lodi
  - Holub Patrik - DnD Interactive Story (https://github.com/Kybernauti-4/DnD_YearWork)
- - Horáček Vojtěch - 
+ - Horáček Vojtěch - snímač zvuku https://github.com/Kybernauti-4/snimac_zvuku
  - Kučera Pavel - Fingerprint Door Lock (https://github.com/Mor1mad/Fingerprint)
  - Lebeda Pavel - ScramBot (https://github.com/Kybernauti-4/ScramBot)
  - Poustka Václav - OmniwheelCar (https://github.com/Kybernauti-4/OmniwheelCar)
