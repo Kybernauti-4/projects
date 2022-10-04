@@ -17,7 +17,7 @@ A příručky pro bastlíře (základy, teorie atp.):
 - Horáček Vojtěch - snímač zvuku <https://github.com/Kybernauti-4/snimac_zvuku>
 - Kučera Pavel - Fingerprint Door Lock (<https://github.com/Mor1mad/Fingerprint>)
 - Lebeda Pavel - ScramBot (<https://github.com/Kybernauti-4/ScramBot>)
-- Poustka Václav - OmniwheelCar (<https://github.com/Kybernauti-4/OmniwheelCar>)
+- Poustka Václav - Omni-wheel-Car (<https://github.com/Kybernauti-4/Omni-wheel-Car>)
 - Sůsa Jaroslav - Desk Lamp <https://github.com/Kybernauti-4/Desk-lamp>
 - Štěpánek Matěj - TotoNeniStreamDeck <https://github.com/Kybernauti-4/streamdeck>
 - Tarka Lukáš - NěcoVíceNežPoloOsa
