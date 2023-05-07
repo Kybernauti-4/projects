@@ -1,4 +1,4 @@
-//Pin 3 (digital pwm pin) + LED - GND
+//Pin 3 (digital pwm pin) + LED - ~1k odpor - GND
 
 int ledPin = 3; // definujeme pin pro LED
 int brightness = 0; // nastavujeme jas LED
