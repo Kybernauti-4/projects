@@ -29,6 +29,7 @@ void setup() {
 void loop() {
 }
 void reset(){
+  TIMSK1 = (1 << OCIE1A); // Enable timer interrupt
   timerCount = 0;
 }
 
@@ -55,6 +56,7 @@ ISR(TIMER1_COMPA_vect) {
     }
     clickCount = 0; // vynuluj počet stisknutí
     flag = 0;  // timer už dokončil časový úsek
+    TIMSK1 = (0 << OCIE1A); // Enable timer interrupt
   }
 }
 
