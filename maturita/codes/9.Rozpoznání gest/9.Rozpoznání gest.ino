@@ -1,83 +1,83 @@
 const int pin1 = 2;  // pin tlačítka
-const int doubleClickDuration = 400;  // čas čekání na double click (milis)
-const int longClickDuration = 300;  // čas od kdy se jedná o long click (milis)
-const int debounceDelay = 1;  // čas pro odstranění chyby (milis)
+const int doubleClickDuration = 600;  // čas čekání na double click (milis)
+const int longClickDuration = 500;  // čas od kdy se jedná o long click (milis)
+const int debounceDelay = 5;  // čas pro odstranění chyby (milis)
 
 int long lastTimePress = 0;  // čas, kdy bylo naposledy stisknuto
 int lastButtonState = HIGH;  // OFF == HIGH (because Arduino has only inbuild pullUP resistor) => to turn it off you need pin the GND pin
 int clickCount = 0;  // počítá počet stisknutí během jednoho timeru
 int clickDuration = 0;  // jak dlouho trval
 
-int long timerCount = doubleClickDuration+1;  // čas pro timer
-
-bool flag = 0;  // aby se spustil timer pouze jednou (při jedné operaci)
+int long flag = 0; // čas posledního puštění "timeru"
 
 void setup() {
   Serial.begin(9600); // nastaví baudrate (rachlost přenosu a komunikaci)
 
-  pinMode(pin1, INPUT_PULLUP); // pull up => (-) --- button --- (i+) => button with GND and IO pin
+  pinMode(pin1, INPUT_PULLUP); // pull up => (io+) --- button --- (GND) => button with GND and IO pin
   attachInterrupt(digitalPinToInterrupt(pin1), isr, CHANGE);  // rising a falling interrupty moc nefungují
-  
-
-  TCCR1A = 0; // Set timer control register A to 0
-  TCCR1B = (1 << CS11) | (1 << WGM12); // Set prescaler to 8 and set timer to CTC mode
-  OCR1A = 15624; // Set output compare register to 10 milis
-  TIMSK1 = (1 << OCIE1A); // Enable timer interrupt
-  //perioda = (1 / frekvence časovače) * hodnota předděličky * (hodnota výstupního porovnávacího registru + 1)
 }
 
 void loop() {
-}
-void reset(){
-  TIMSK1 = (1 << OCIE1A); // Enable timer interrupt
-  timerCount = 0;
+  noInterrupts();
+  if ((clickCount >= 1) && millis()-flag>doubleClickDuration) {    
+    eventHandler();
+    clickCount = 0; // vynuluj počet stisknutí
+    lastButtonState = HIGH; // opraví případné chyby
+    
+
+  }
+  interrupts();
+  delay(1);
 }
 
-ISR(TIMER1_COMPA_vect) {
-  // Timer isr
-  timerCount++;  // počítadlo (každý časový úsek)
-  if (timerCount == doubleClickDuration/10) {
-    clickCount++;  // stisknuto (poprvé)
-
-    // zjisti co bylo zmačknuto:
+void eventHandler(){
+  // zjisti co bylo zmačknuto:
     if (clickCount == 1) {
+
       if (clickDuration < longClickDuration) {
-        Serial.println("Single Click");
+        Serial.print("Single Click ");
         // single click
       } else {
-        Serial.println("Long Click");
+        Serial.print("Long Click ");
         // long click
       }
     } else if (clickCount == 2) {
       if (clickDuration < longClickDuration) {
-        Serial.println("Double Click");
+        Serial.print("Double Click ");
         // double click
       }
     }
-    clickCount = 0; // vynuluj počet stisknutí
-    flag = 0;  // timer už dokončil časový úsek
-    TIMSK1 = (0 << OCIE1A); // Enable timer interrupt
-  }
+    Serial.println(clickCount);
+    
 }
 
 void isr() {
   int long currentTime = millis();  // aktuální čas
   int buttonState = digitalRead(pin1);  // čte hodnotu pinu (tlačítka - negaci)
+  flag = millis();
+  
 
-  if (buttonState == LOW) {  // tlačítko je stisknuto
+  if (buttonState == LOW && !(lastButtonState == buttonState)) {  // tlačítko je stisknuto
     lastTimePress = currentTime;  // čas stisknutí
+    lastButtonState = buttonState;
+    
     
   }
-  else if ((currentTime - lastTimePress) > debounceDelay && buttonState == HIGH) { // "bouncing error" a tlačítko je puštěno
+  else if (buttonState == HIGH && !(lastButtonState == buttonState)) { // "bouncing error" a tlačítko je puštěno
     clickDuration = currentTime - lastTimePress;  // jak dlouho trvalo stisknutí
-    handleButtonClick();
+    if (clickDuration>debounceDelay){
+      lastButtonState = buttonState;
+      //Serial.println("Release");
+      handleButtonClick();
+    }
+    
   }
 }
 
 void handleButtonClick() {
-  if (not flag){
-    flag = 1;  // timer běží
-    reset();  // spustí timer (vynuluje)
+  if (clickCount == 0){
+    clickCount++;  // stisknuto (poprvé)
+    
   } else {
     clickCount++;  // další stisknutí
   }
