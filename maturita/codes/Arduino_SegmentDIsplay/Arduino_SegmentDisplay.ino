@@ -25,8 +25,6 @@ void setup() {
 
 void loop() {
   for (int i = 0; i < 4; i++) {
-
-
     for (int n = 0; n < 8; n++) {
       digitalWrite(arr_segment[n], not data[i][n]);
     }
